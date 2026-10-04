@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Gelar Swasana Jati | Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+<!-- Penambahan Tombol Mode Gelap -->    
+<nav aria-label="Navigasi utama">
+    <a href="#profil" class="logo">Michael Gelar S.J<span>.</span></a>
+    <ul>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><button id="btn-tema">Mode Gelap</button></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="hero">
+        <h1>Halo, Saya <span>Michael Gelar</span></h1>
+        <p>Mahasiswa Informatika yang tertarik pada teknologi, fotografi, videografi, editing, desain, dan pengembangan website.</p>
+        <div class="hero-buttons">
+            <a href="#tentang" class="btn btn-primary"><i class="fa-solid fa-user"></i>Tentang Saya</a>
+            <a href="#kontak" class="btn"><i class="fa-solid fa-paper-plane"></i>Hubungi Saya</a>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section id="profil">
+    <div class="section-title">
+        <h2>Profil</h2>
+        <p>Mengenal saya lebih dekat</p>
+    </div>
+
+    <div class="profile">
+        <figure>
+            <img src="foto.jpg" alt="Foto Michael Gelar Swasana Jati">
+            <figcaption>Michael Gelar Swasana Jati</figcaption>
+        </figure>
+
+        <article class="profile-text">
+            <h3>Informatics Student</h3>
+            <h2>Technology & Creative</h2>
+            <p>Saya adalah mahasiswa Informatika yang memiliki ketertarikan pada bidang teknologi sekaligus dunia kreatif.</p>
+            <p>Saya senang mempelajari pemrograman, pengembangan website, fotografi, videografi, editing, dan desain.</p>
+        </article>
+    </div>
+</section>
+
+<section aria-label="Keunggulan">
+    <div class="stats">
+        <article class="card stat">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Informatika</h3>
+            <p>Technology & Programming</p>
+        </article>
+
+        <article class="card stat">
+            <i class="fa-solid fa-camera"></i>
+            <h3>Creative</h3>
+            <p>Photography & Videography</p>
+        </article>
+
+        <article class="card stat">
+            <i class="fa-solid fa-code"></i>
+            <h3>Developer</h3>
+            <p>Web Development</p>
+        </article>
+    </div>
+</section>
+
+<!-- MODUL 4: PORTOFOLIO DINAMIS -->
+<section id="portofolio">
+  <h2>Portofolio & Pengalaman</h2>
+  <form id="form-portofolio">
+    <input type="text" id="input-judul" placeholder="Judul Proyek" required>
+    <input type="text" id="input-deskripsi" placeholder="Deskripsi Singkat" required>
+    <button type="submit">Tambah Portofolio</button>
+  </form>
+  <div id="container-portofolio"></div>
+</section>
+<!-- MODUL 5: EVENT HANDLING & KOMENTAR -->
+<section id="komentar">
+  <h2>Tinggalkan Komentar</h2>
+  <form id="form-komentar">
+    <input type="text" id="input-nama" placeholder="Nama Anda">
+    <textarea id="input-pesan" placeholder="Tulis komentar..."></textarea>
+    <button type="submit">Kirim Komentar</button>
+  </form>
+  <p id="pesan-error" style="color: red; display: none;"></p>
+
+  <div>
+    <button id="btn-hapus-semua" style="background-color: red; color: white;">Hapus Semua Komentar</button>
+  </div>
+  <ul id="daftar-komentar"></ul>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>Data Diri</h2>
+        <p>Informasi singkat tentang saya</p>
+    </div>
+
+    <div class="table-box">
+        <table>
+            <tbody>
+                <tr><th scope="row">Nama</th><td>Michael Gelar Swasana Jati</td></tr>
+                <tr><th scope="row">Program Studi</th><td>Informatika</td></tr>
+                <tr><th scope="row">Universitas</th><td>Universitas Sanata Dharma</td></tr>
+                <tr><th scope="row">Bidang</th><td>Web Development & Creative</td></tr>
+                <tr><th scope="row">Minat</th><td>Programming, Photography, Videography & Design</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section id="tentang">
+    <div class="section-title">
+        <h2>Tentang Saya</h2>
+        <p>Hal yang saya sukai</p>
+    </div>
+
+    <div class="about-text">
+        <p>Selain belajar mengenai Informatika, saya juga memiliki ketertarikan pada bidang kreatif. Bagi saya, teknologi dan kreativitas dapat dikombinasikan untuk menghasilkan sesuatu yang menarik.</p>
+        <p>Saya senang mencoba hal baru dan terus mengembangkan kemampuan melalui berbagai proyek dan pengalaman.</p>
+    </div>
+
+    <div class="hobbies">
+        <article class="card hobby"><i class="fa-solid fa-camera"></i><h3>Fotografi</h3><p>Mengabadikan momen melalui kamera.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-video"></i><h3>Videografi</h3><p>Membuat dan mendokumentasikan video.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-film"></i><h3>Editing</h3><p>Mengolah foto dan video.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-palette"></i><h3>Desain</h3><p>Membuat desain visual kreatif.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-mountain"></i><h3>Hiking</h3><p>Menikmati perjalanan dan alam.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-music"></i><h3>Musik</h3><p>Menikmati berbagai jenis musik.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-table-tennis-paddle-ball"></i><h3>Badminton</h3><p>Berolahraga dan bermain badminton.</p></article>
+        <article class="card hobby"><i class="fa-solid fa-person-swimming"></i><h3>Renang</h3><p>Menjaga kebugaran dengan berenang.</p></article>
+    </div>
+</section>
+
+<section id="keahlian">
+    <div class="section-title">
+        <h2>Keahlian</h2>
+        <p>Teknologi yang sedang saya pelajari</p>
+    </div>
+
+    <div class="skills">
+        <div class="skill">
+            <div class="skill-head"><span>HTML</span><span>90%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 90 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><div class="bar" style="width:90%"></div></div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-head"><span>CSS</span><span>85%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 85 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><div class="bar" style="width:85%"></div></div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-head"><span>JavaScript</span><span>70%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 70 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><div class="bar" style="width:70%"></div></div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-head"><span>Python</span><span>75%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 75 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><div class="bar" style="width:75%"></div></div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-head"><span>Java</span><span>65%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 65 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><div class="bar" style="width:65%"></div></div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-head"><span>C++</span><span>60%</span></div>
+            <div class="progress" role="progressbar" aria-label="Kemampuan 60 persen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><div class="bar" style="width:60%"></div></div>
+        </div>
+    </div>
+</section>
+
+<section id="pendidikan">
+    <div class="section-title">
+        <h2>Riwayat Pendidikan</h2>
+        <p>Perjalanan pendidikan saya</p>
+    </div>
+
+    <div class="timeline">
+        <article class="card education"><span>2013 - 2019</span><h3>SD Negeri Jatisari</h3><p>Pendidikan dasar.</p></article>
+        <article class="card education"><span>2019 - 2022</span><h3>SMP Kanisius Sleman</h3><p>Pendidikan menengah pertama.</p></article>
+        <article class="card education"><span>2022 - 2025</span><h3>SMA Stella Duce 2 Yogyakarta</h3><p>Pendidikan menengah atas.</p></article>
+        <article class="card education"><span>2025 - Sekarang</span><h3>Universitas Sanata Dharma</h3><p>Program Studi Informatika.</p></article>
+    </div>
+</section>
+
+<div class="dream-section">
+    <article class="dream">
+        <h2>Let's Create Something!</h2>
+        <p>Saya ingin terus berkembang dalam bidang teknologi sekaligus mengembangkan kemampuan kreatif melalui berbagai proyek dan pengalaman.</p>
+    </article>
+</div>
+
+<aside id="kontak" aria-labelledby="kontak-title">
+    <div class="kontak-header">
+        <div class="section-title">
+            <h2 id="kontak-title">Mari Terhubung</h2>
+        </div>
+        <!-- Tombol Toggle -->
+        <button id="toggle-kontak-btn" aria-expanded="true" aria-controls="kontak-content">
+            <i id="toggle-icon" class="fa-solid fa-eye-slash"></i>
+            <span id="toggle-text">Sembunyikan Kontak</span>
+        </button>
+    </div>
+
+    <!-- Konten Kontak -->
+    <div id="kontak-content">
+        <div class="section-title">
+            <p>Terima kasih telah meluangkan waktu untuk mengunjungi portfolio saya.</p>
+            <p>Saya selalu terbuka untuk belajar hal baru, berdiskusi, berbagi pengalaman, maupun menjalin kolaborasi dalam berbagai bidang.</p>
+            <p>Jika Anda ingin berkenalan, memberikan saran, berdiskusi mengenai teknologi maupun media kreatif, atau mengajak saya bekerja sama dalam suatu proyek, silakan hubungi saya melalui kontak yang tersedia di bawah ini.</p>
+        </div>
+
+        <div class="contact-links">
+            <a href="https://www.instagram.com/m.g.s.j_3013?igsh=eWRjdm5oNmg5MGU3" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+            </a>
+
+            <a href="https://github.com/MichaelGelarSwasanaJati" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i><span>GitHub</span>
+            </a>
+
+            <a href="mailto:swasanajati431@gmail.com?subject=Kerja%20Sama%20dan%20Kolaborasi&body=Halo%20Michael,%0D%0A%0D%0ASaya%20melihat%20portfolio%20Anda.%20Saya%20tertarik%20untuk%20berdiskusi%20mengenai%20kesempatan%20kerja%20sama%20atau%20kolaborasi.%0D%0A%0D%0ATerima%20kasih.">
+                <i class="fa-solid fa-envelope"></i><span>Email</span>
+            </a>
+
+            <a href="https://wa.me/6281370254837?text=Halo%20Gelar,%0A%0ASaya%20melihat%20portfolio%20Anda%20dan%20tertarik%20untuk%20menghubungi%20Anda%20terkait%20peluang%20kerja%20sama,%20kolaborasi,%20maupun%20diskusi%20lebih%20lanjut.%0A%0ATerima%20kasih." target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/michael-gelar-swasana-jati-42a59b384/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+            </a>
+        </div>
+    </div>
+</aside>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 <span>Michael Gelar Swasana Jati</span>. All Rights Reserved.</p>
+</footer>
+
+<a href="#top" class="back-top" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+<script src="script.js"></script>
+  </body>
+</html>
